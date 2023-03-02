@@ -287,7 +287,7 @@ func (p *LocalPathProvisioner) Provision(opts pvController.ProvisionOptions) (*v
 			},
 		}
 	} else {
-		hostPathType := v1.HostPathDirectoryOrCreate
+		hostPathType := v1.HostPathDirectory
 		pvs = v1.PersistentVolumeSource{
 			HostPath: &v1.HostPathVolumeSource{
 				Path: path,
